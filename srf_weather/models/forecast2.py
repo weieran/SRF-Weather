@@ -29,10 +29,8 @@ class Forecast2(BaseModel):
     """
     Forecast2
     """
-    var_60minutes: conlist(Model60minute) = Field(..., alias="60minutes")
     day: conlist(Day) = ...
-    hour: conlist(Model60minute) = ...
-    __properties = ["60minutes", "day", "hour"]
+    __properties = ["day"]
 
     class Config:
         allow_population_by_field_name = True
