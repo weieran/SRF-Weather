@@ -1,0 +1,278 @@
+{
+  "geolocation": {
+    "id": "46.8689,8.2391",
+    "lat": 46.8689,
+    "lon": 8.2391,
+    "station_id": "S19732",
+    "timezone": "Europe/Zurich",
+    "default_name": "Sachseln",
+    "alarm_region_id": "68",
+    "alarm_region_name": "OW",
+    "district": "",
+    "geolocation_names": [
+      {
+        "district": "",
+        "description_short": "Obwalden",
+        "description_long": "Obwalden, 483 m.ü.M.",
+        "id": "4051e2d39be654316bd214e1cf155151",
+        "location_id": "417266228",
+        "type": "city",
+        "language": 0,
+        "translation_type": "orig",
+        "name": "Sachseln",
+        "country": "Schweiz",
+        "province": "Obwalden",
+        "inhabitants": 4597,
+        "height": 483,
+        "ch": 1
+      }
+    ]
+  },
+  "forecast": {
+    "day": [
+      {
+        "local_date_time": "2023-04-16T00:00:00+02:00",
+        "TX_C": 8,
+        "TN_C": 5,
+        "PROBPCP_PERCENT": 90,
+        "RRR_MM": 12,
+        "FF_KMH": 4,
+        "FX_KMH": 17,
+        "DD_DEG": 80,
+        "SUNSET": 2015,
+        "SUNRISE": 638,
+        "SUN_H": 0,
+        "UVI": 5,
+        "SYMBOL_CODE": 20,
+        "SYMBOL24_CODE": 47,
+        "type": "day",
+        "min_color": {
+          "temperature": 5,
+          "background_color": "#146d6c",
+          "text_color": "#ffffff"
+        },
+        "max_color": {
+          "temperature": 8,
+          "background_color": "#54a644",
+          "text_color": "#000000"
+        }
+      },
+      {
+        "local_date_time": "2023-04-17T00:00:00+02:00",
+        "TX_C": 11,
+        "TN_C": 5,
+        "PROBPCP_PERCENT": 63,
+        "RRR_MM": 1,
+        "FF_KMH": 4,
+        "FX_KMH": 22,
+        "DD_DEG": 60,
+        "SUNSET": 2016,
+        "SUNRISE": 636,
+        "SUN_H": 1,
+        "UVI": 5,
+        "SYMBOL_CODE": 4,
+        "SYMBOL24_CODE": 21,
+        "type": "day",
+        "min_color": {
+          "temperature": 5,
+          "background_color": "#146d6c",
+          "text_color": "#ffffff"
+        },
+        "max_color": {
+          "temperature": 11,
+          "background_color": "#accf24",
+          "text_color": "#000000"
+        }
+      },
+      {
+        "local_date_time": "2023-04-18T00:00:00+02:00",
+        "TX_C": 13,
+        "TN_C": 3,
+        "PROBPCP_PERCENT": 7,
+        "RRR_MM": 0,
+        "FF_KMH": 4,
+        "FX_KMH": 17,
+        "DD_DEG": 50,
+        "SUNSET": 2018,
+        "SUNRISE": 634,
+        "SUN_H": 4,
+        "UVI": 5,
+        "SYMBOL_CODE": 3,
+        "SYMBOL24_CODE": 10,
+        "type": "day",
+        "min_color": {
+          "temperature": 3,
+          "background_color": "#0c5a7c",
+          "text_color": "#ffffff"
+        },
+        "max_color": {
+          "temperature": 13,
+          "background_color": "#c4d71c",
+          "text_color": "#000000"
+        }
+      },
+      {
+        "local_date_time": "2023-04-19T00:00:00+02:00",
+        "TX_C": 14,
+        "TN_C": 4,
+        "PROBPCP_PERCENT": 16,
+        "RRR_MM": 0.1,
+        "FF_KMH": 4,
+        "FX_KMH": 19,
+        "DD_DEG": 60,
+        "SUNSET": 2019,
+        "SUNRISE": 632,
+        "SUN_H": 4,
+        "UVI": 5,
+        "SYMBOL_CODE": 3,
+        "SYMBOL24_CODE": 10,
+        "type": "day",
+        "min_color": {
+          "temperature": 4,
+          "background_color": "#045f6c",
+          "text_color": "#ffffff"
+        },
+        "max_color": {
+          "temperature": 14,
+          "background_color": "#d4da13",
+          "text_color": "#000000"
+        }
+      },
+      {
+        "local_date_time": "2023-04-20T00:00:00+02:00",
+        "TX_C": 14,
+        "TN_C": 4,
+        "PROBPCP_PERCENT": 45,
+        "RRR_MM": 0.8,
+        "FF_KMH": 4,
+        "FX_KMH": 26,
+        "DD_DEG": 60,
+        "SUNSET": 2020,
+        "SUNRISE": 630,
+        "SUN_H": 4,
+        "UVI": 5,
+        "SYMBOL_CODE": 3,
+        "SYMBOL24_CODE": 10,
+        "type": "day",
+        "min_color": {
+          "temperature": 4,
+          "background_color": "#045f6c",
+          "text_color": "#ffffff"
+        },
+        "max_color": {
+          "temperature": 14,
+          "background_color": "#d4da13",
+          "text_color": "#000000"
+        }
+      },
+      {
+        "local_date_time": "2023-04-21T00:00:00+02:00",
+        "TX_C": 16,
+        "TN_C": 2,
+        "PROBPCP_PERCENT": 21,
+        "RRR_MM": 0.5,
+        "FF_KMH": 4,
+        "FX_KMH": 24,
+        "DD_DEG": 60,
+        "SUNSET": 2022,
+        "SUNRISE": 628,
+        "SUN_H": 7,
+        "UVI": 6,
+        "SYMBOL_CODE": 3,
+        "SYMBOL24_CODE": 10,
+        "type": "day",
+        "min_color": {
+          "temperature": 2,
+          "background_color": "#0c527c",
+          "text_color": "#ffffff"
+        },
+        "max_color": {
+          "temperature": 16,
+          "background_color": "#e4e20c",
+          "text_color": "#000000"
+        }
+      },
+      {
+        "local_date_time": "2023-04-22T00:00:00+02:00",
+        "TX_C": 18,
+        "TN_C": 3,
+        "PROBPCP_PERCENT": 20,
+        "RRR_MM": 1,
+        "FF_KMH": 4,
+        "FX_KMH": 22,
+        "DD_DEG": 60,
+        "SUNSET": 2023,
+        "SUNRISE": 627,
+        "SUN_H": 8,
+        "UVI": 6,
+        "SYMBOL_CODE": 10,
+        "SYMBOL24_CODE": 1,
+        "type": "day",
+        "min_color": {
+          "temperature": 3,
+          "background_color": "#0c5a7c",
+          "text_color": "#ffffff"
+        },
+        "max_color": {
+          "temperature": 18,
+          "background_color": "#f4e50b",
+          "text_color": "#000000"
+        }
+      },
+      {
+        "local_date_time": "2023-04-23T00:00:00+02:00",
+        "TX_C": 18,
+        "TN_C": 5,
+        "PROBPCP_PERCENT": 30,
+        "RRR_MM": 2,
+        "FF_KMH": 4,
+        "FX_KMH": 22,
+        "DD_DEG": 70,
+        "SUNSET": 2025,
+        "SUNRISE": 625,
+        "SUN_H": 6,
+        "UVI": 6,
+        "SYMBOL_CODE": 3,
+        "SYMBOL24_CODE": 10,
+        "type": "day",
+        "min_color": {
+          "temperature": 5,
+          "background_color": "#146d6c",
+          "text_color": "#ffffff"
+        },
+        "max_color": {
+          "temperature": 18,
+          "background_color": "#f4e50b",
+          "text_color": "#000000"
+        }
+      },
+      {
+        "local_date_time": "2023-04-24T00:00:00+02:00",
+        "TX_C": 18,
+        "TN_C": 5,
+        "PROBPCP_PERCENT": 35,
+        "RRR_MM": 3,
+        "FF_KMH": 4,
+        "FX_KMH": 22,
+        "DD_DEG": 60,
+        "SUNSET": 2026,
+        "SUNRISE": 623,
+        "SUN_H": 6,
+        "UVI": 6,
+        "SYMBOL_CODE": 4,
+        "SYMBOL24_CODE": 21,
+        "type": "day",
+        "min_color": {
+          "temperature": 5,
+          "background_color": "#146d6c",
+          "text_color": "#ffffff"
+        },
+        "max_color": {
+          "temperature": 18,
+          "background_color": "#f4e50b",
+          "text_color": "#000000"
+        }
+      }
+    ]
+  }
+}

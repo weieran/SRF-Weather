@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "srf-weather"
+version = "0.1.0"
+description = "A weather app for SRF"
+authors = ["Andreas Weier <andreas.weier.open.source@gmail.com>"]
+readme = "README.md"
+packages = [{include = "srf_weather"}]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ["^3.10", "^3.8"]
+requests = "^2.28.2"
+
+[tool.poetry.scripts]
+srf-weather = "srf_weater.main:main"
+
+[tool.coverage.run]
+branch = true
+source = ["srf_weather"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.tox.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if __name__ == \"__main__\":",
+    "__version__",
+    "raise NotImplementedError",
+    "except Exception as e:",
+    "except Exception as exc:",
+    "else:",
+    "finally:",
+    "pass",
+]
