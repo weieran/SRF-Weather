@@ -3,7 +3,8 @@ from enum import Enum
 import requests
 from datetime import datetime, timedelta
 import urllib.parse
-
+from srf_weather.models.forecastday import Forecastday
+from srf_weather.models.forecast import Forecast
 
 class InvalidTokenException(Exception):
     """Raised when the received access token is invalid """
@@ -18,10 +19,6 @@ class InvalidGeoLocationException(Exception):
 class InvalidWeatherException(Exception):
     """Raised when the received access token is invalid """
     pass
-
-
-def return3():
-    return 3
 
 
 class Weather:
@@ -113,9 +110,11 @@ class Weather:
             raise InvalidWeatherException
 
         # Parse the JSON response data
-        data = response.json()
-
-        # Extract the forecast data from the response data
-        forecast = data["forecast"]
+        forecast = response.json()
 
         return forecast
+
+
+def convert_json_forecast_to_class(forecast):
+    f = Forecast.from_dict(forecast)
+    return f

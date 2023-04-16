@@ -8,6 +8,22 @@ tools: \* `poetry <https://python-poetry.org/docs/#installation>`__ \*
 poetry is used to manage the dependencies and to build the package. tox
 is used to run automated tests.
 
+Generate New API Client
+~~~~~~~~~~~~~~~~~~~~~~~
+You can use the openapi-generator-cli to generate a new API client.
+The following command will generate a new API client in the ``.npx_gen``
+directory. The ``--additional-properties=generateSourceCodeOnly=true``
+option will only generate the source code and not the tests.
+
+
+
+.. code:: bash
+
+    npm install @openapitools/openapi-generator-cli -D
+    npx @openapitools/openapi-generator-cli generate -i swagger_srf_weather_v1_0_4.yaml -g python-nextgen -o .npx_gen --additional-properties=generateSourceCodeOnly=true
+
+The generated code must be copied to the ``srf_weather_client`` directory
+
 Build
 ~~~~~
 

@@ -1,7 +1,7 @@
+import json
 import unittest
 import os
-from srf_weather.weather import Weather, return3
-from srf_weather.weather import Weather
+from srf_weather.weather import Weather, convert_json_forecast_to_class
 
 
 def guard_client_id_secret():
@@ -46,6 +46,12 @@ class TestWeather(unittest.TestCase):
         self.assertIsNotNone(forecast)
 
 
-class TestRetur3(unittest.TestCase):
-    def test_return3(self):
-        self.assertEqual(3, return3())
+class test_convert_json_to_weather_forecast(unittest.TestCase):
+    # load json from file
+    # convert json to weather forecast
+    # compare weather forecast with expected weather forecast
+
+    testfile = os.path.join(os.path.dirname(__file__), 'weather_day_response.json')
+    data = json.load(open(testfile))
+    forecast = convert_json_forecast_to_class(data)
+    print(forecast)
