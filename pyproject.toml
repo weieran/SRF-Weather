@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "srf-weather"
-version = "0.1.0"
+version = "0.1.1"
 description = "A weather app for SRF"
 authors = ["Andreas Weier <andreas.weier.open.source@gmail.com>"]
 homepage = "https://github.com/weieran/SRF-Weather"
 repository = "https://github.com/weieran/SRF-Weather"
 documentation = "https://srf-weather.readthedocs.io/en/latest/"
-readme = "README.md"
+readme = "README.rst"
 packages = [{include = "srf_weather"}]
 license = "MIT"
 

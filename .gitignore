@@ -131,3 +131,5 @@ dmypy.json
 .idea/
 /poetry.lock
 /_build/
+/node_modules/
+/.npx_gen/
