@@ -119,3 +119,9 @@ class Weather:
         forecast = data["forecast"]
 
         return forecast
+
+    @staticmethod
+    def get_hours_of_sun(forecast):
+        sun_h_today = forecast["day"][0]["SUN_H"]
+        sun_h_tomorrow = forecast["day"][1]["SUN_H"]
+        return sun_h_today, sun_h_tomorrow

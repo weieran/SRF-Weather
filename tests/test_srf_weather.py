@@ -1,6 +1,6 @@
+import json
 import unittest
 import os
-from srf_weather.weather import Weather, return3
 from srf_weather.weather import Weather
 
 
@@ -45,7 +45,15 @@ class TestWeather(unittest.TestCase):
         print(forecast)
         self.assertIsNotNone(forecast)
 
+    def test_get_hours_of_sun(self):
+        # load json from file
+        # convert json to weather forecast
+        # compare weather forecast with expected weather forecast
 
-class TestRetur3(unittest.TestCase):
-    def test_return3(self):
-        self.assertEqual(3, return3())
+        testfile = os.path.join(os.path.dirname(__file__), 'weather_day_response.json')
+        with open(testfile) as f:
+            data = json.load(f)["forecast"]
+
+        sun_h_today, sun_h_tomorrow = Weather.get_hours_of_sun(data)
+        self.assertEqual(sun_h_today, 0)
+        self.assertEqual(sun_h_tomorrow, 1)
