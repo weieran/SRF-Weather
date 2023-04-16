@@ -21,7 +21,7 @@ import json
 
 
 
-from pydantic import BaseModel, Field, StrictInt, StrictStr
+from pydantic import BaseModel, Field, StrictInt, StrictStr, ConstrainedFloat
 from srf_weather.models.min_maxcolor import MinMaxcolor
 
 class Day(BaseModel):
@@ -29,18 +29,18 @@ class Day(BaseModel):
     Day
     """
     local_date_time: StrictStr = ...
-    tx_c: StrictStr = Field(..., alias="TX_C")
+    tx_c: StrictInt = Field(..., alias="TX_C")
     tn_c: StrictInt = Field(..., alias="TN_C")
-    probpcp_percent: StrictStr = Field(..., alias="PROBPCP_PERCENT")
-    rrr_mm: StrictStr = Field(..., alias="RRR_MM")
-    ff_kmh: StrictStr = Field(..., alias="FF_KMH")
-    fx_kmh: StrictStr = Field(..., alias="FX_KMH")
-    dd_deg: StrictStr = Field(..., alias="DD_DEG")
-    sunset: StrictStr = Field(..., alias="SUNSET")
+    probpcp_percent: StrictInt = Field(..., alias="PROBPCP_PERCENT")
+    rrr_mm: ConstrainedFloat = Field(..., alias="RRR_MM")
+    ff_kmh: StrictInt = Field(..., alias="FF_KMH")
+    fx_kmh: StrictInt = Field(..., alias="FX_KMH")
+    dd_deg: StrictInt = Field(..., alias="DD_DEG")
+    sunset: StrictInt = Field(..., alias="SUNSET")
     sunrise: StrictInt = Field(..., alias="SUNRISE")
     sun_h: StrictInt = Field(..., alias="SUN_H")
     symbol_code: StrictInt = Field(..., alias="SYMBOL_CODE")
-    type: StrictInt = ...
+    type: StrictStr = ...
     min_color: MinMaxcolor = ...
     max_color: MinMaxcolor = ...
     __properties = ["local_date_time", "TX_C", "TN_C", "PROBPCP_PERCENT", "RRR_MM", "FF_KMH", "FX_KMH", "DD_DEG", "SUNSET", "SUNRISE", "SUN_H", "SYMBOL_CODE", "type", "min_color", "max_color"]
